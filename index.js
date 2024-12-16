@@ -72,7 +72,7 @@ async function sendapi(openid) {
             // 按照key前面的类型，对照参数限制填写，否则都会发送不成功
             //
             phrase4: {
-              value: "这是一个提醒",
+              value: "状态变更",
             },
             time15: {
               value: new Date().toLocaleDateString(),
