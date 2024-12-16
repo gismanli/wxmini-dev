@@ -1,5 +1,6 @@
 const path = require("path");
 const express = require("express");
+const request = require("request");
 const cors = require("cors");
 const morgan = require("morgan");
 const { init: initDB, Counter } = require("./db");
@@ -37,7 +38,7 @@ app.post("/api/count", async (req, res) => {
 app.get("/api/count", async (req, res) => {
   const result = await Counter.count();
   res.send({
-    code: 0,
+    code: 0, 
     data: result,
   });
 });
